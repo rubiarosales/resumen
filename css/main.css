@@ -1,12 +1,12 @@
 :root/*html*/{
     font-size: 62.5%;
     --theme-color:white;
-    --primary-color: rgba(128, 0, 128, 0.486);
-    --secundary-color: rgba(43, 92, 138, 1);
+    --primary-color: #47c0a7;
+    --secundary-color: #065893;
     --text-color: rgb(1, 2, 15);
     --text-color-inverse:white;
-    --navbar-shadow-color: rgba(170, 201, 226, 1);
-    --menu-mobile-background-color: rgba(128, 0, 128, 1);
+    --navbar-shadow-color: #fbe4a3;
+    --menu-mobile-background-color:#179cbc;
     scroll-behavior: smooth;
 }
 
