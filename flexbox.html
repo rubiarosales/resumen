@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Responsive</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&family=Bad+Script&display=swap" rel="stylesheet">
+    <script defer src="js/app.js"></script>
+</head>
+
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img height="50" width="50" src="img/rrosales_400x400.jpeg" alt="Rubia Rosales" />
+                <div>Rubia Rosales <br> { Code }</div>
+            </a>
+            <button class="open-menu" aria-label="Abrir Menú">
+                <img src="img/barras.svg" alt="abrir menú" width=30rem height=30rem>
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar Menú">
+                    <img src="img/cerrar.svg" alt="cerrar menú" width=30rem height=30rem>
+                </button>                
+                <li><a href="#profile" class="selected">Perfil</a></li>
+                <li><a href="#experiences">Experiencia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="horizontal-padding vertical-padding"> 
+        <section class="profile" id="profile">
+            <div class="profile-info">
+                <h1 class="profile-title">Hola, soy <br/>Rubia Rosales</h1>
+                <p class="profile-details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quam deserunt impedit earum velit perferendis necessitatibus, ratione corrupti rem consectetur.</p>
+                <button class="profile-btn">
+                    Descargar CV
+                </button>
+            </div>
+            <div class="profile-img-section">
+                <img src="img/rrosales_400x400.jpeg" alt="Foto de Rubia Rosales" class="profile-img">
+                <div class="profile-img-line"></div>
+            </div>
+        
+        </section>
+    </div>
+    <section class="experiences" id="experiences">
+    <class="wave"></div>
+    <div class="experiences-body">
+        <h2 class="experience-title">Experiencia</h2>
+        <div class="experience-grid">
+            <div class="empty"></div>
+            <div class="line"></div>
+            <div class="experience">
+                <div class="experience-date">2020-2022</div>
+                <div class="experience-company">Bike Networks SRL</div>
+                <div class="experience-position">Administrativa</div>
+                <div class="experience-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia minus labore rerum in exercitationem iusto rem debitis obcaecati similique.</div>
+            </div>
+            <div class="experience experience_left">
+                <div class="experience-date">2018-2020</div>
+                <div class="experience-company">Bike Networks SRL</div>
+                <div class="experience-position">Administrativa</div>
+                <div class="experience-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia minus labore rerum in exercitationem iusto rem debitis obcaecati similique.</div>
+            </div>
+            <div class="line"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="line"></div>
+            <div class="experience">
+                <div class="experience-date">2017-2018</div>
+                <div class="experience-company">Bike Networks SRL</div>
+                <div class="experience-position">Administrativa</div>
+                <div class="experience-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia minus labore rerum in exercitationem iusto rem debitis obcaecati similique.</div>
+            </div>
+            <div class="experience experience_left">
+                <div class="experience-date">2015-2017</div>
+                <div class="experience-company">Bike Networks SRL</div>
+                <div class="experience-position">Administrativa</div>
+                <div class="experience-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officia minus labore rerum in exercitationem iusto rem debitis obcaecati similique.</div>
+            </div>
+            <div class="line last-line"></div>
+            <div class="empty"></div>
+        </div>
+    </div>
+    <div  class="wave wave-bottom"></div>
+
+    </section>
+    <div class="horizontal-padding vertical-padding"> 
+        <section class="Skills" id="skills">
+            <h2 class="skills-title">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">CSS</li>
+                <li class="skills-skill">JavaScript</li>
+                <li class="skills-skill">Ruby</li>
+                <li class="skills-skill">Gobstone</li>
+                <li class="skills-skill">Java</li>
+                <li class="skills-skill">MS Excel</li>
+                <li class="skills-skill">MS Word</li>
+                <li class="skills-skill">MS Power Point</li>
+                <li class="skills-skill">MS Publisher</li>
+            </ul>
+
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="contact-title">Contacto</h2>
+        </section>
+    </div>
+</body>
+
+</html>

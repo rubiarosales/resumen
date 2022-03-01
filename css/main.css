@@ -1,0 +1,474 @@
+:root/*html*/{
+    font-size: 62.5%;
+    --theme-color:white;
+    --primary-color: rgba(128, 0, 128, 0.486);
+    --secundary-color: rgba(43, 92, 138, 1);
+    --text-color: rgb(1, 2, 15);
+    --text-color-inverse:white;
+    --navbar-shadow-color: rgba(170, 201, 226, 1);
+    --menu-mobile-background-color: rgba(128, 0, 128, 1);
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /*font-family: 'Arima Madurai';*/
+    font-size: 1.4rem;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    padding-top: 7rem;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+section[id]{
+    scroll-margin-top: 9.8rem; ;
+}
+
+/*ESTILOS DEL NAVBAR*/
+
+.topheader{
+box-shadow: 0 0.4rem 0.5rem var(--navbar-shadow-color);
+position: fixed;
+background-color: var(--theme-color);
+left: 0;/*ver qué hizo acá*/
+top: 0;
+width: 100%;
+z-index: 100;
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 98rem;
+    margin: 0 auto;
+
+}
+
+/* LOGO*/
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight:bolder;
+    color: var(--primary-color);
+}
+
+.logo img{
+    border-radius: 50%;
+}
+/*MENU*/
+
+.menu{
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu li{
+    padding: 0 1rem;
+}
+
+.menu a{
+    color: var(--secundary-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after{
+    content: "";
+    background-color: var(--secundary-color);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.4rem);
+    width: 100%;
+    height: 0.4rem;
+    opacity: 0;
+}
+
+.menu a.selected::after,
+.menu a:hover::after{
+    opacity: 0.8;
+}
+.menu a.selected,
+.menu a:hover{
+    color:var(--primary-color);
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+/* PROFILE */
+
+.profile-info{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.profile-img{
+width: 80%;
+max-width: 30rem;
+border-radius: 5%;
+}
+.profile-img-section{
+    position: relative;
+    display: inline;
+}
+.profile-img-line{
+    background-color: var(--secundary-color);
+    width: 100%;
+    position: absolute;
+    height: 1.5rem;
+    left: 0;
+    bottom: 0%;
+}
+.profile{
+    text-align: center;
+}
+.profile-title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+}
+.profile-details{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 45rem;
+    margin: 0.2rem auto;
+}
+.profile-btn{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.4em 0.8em;
+    border-radius: 0.7rem;
+}
+.profile-btn:hover{
+    filter: brightness(120%);
+}
+
+.horizontal-padding{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.vertical-padding{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* EXPERIENCES */
+.experiences{
+    display: flex;
+    flex-direction: column;
+}
+.wave{
+    width: 100%;
+    height: 1.5rem;
+    background-color: var(--menu-mobile-background-color);
+}
+
+.experiences-body{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    
+}
+.experience-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+.experience-date{
+    color: var(--secundary-color);
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.experience-company{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.experience-position{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.experience-description{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+.experience{
+    padding: 1.8rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+
+
+/* /SKILSS/ */
+.skills{
+    max-width: 980px;
+    margin: 0 auto;
+}
+.skills-title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills-skill{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    box-shadow: 0 0.4rem 1rem var(--menu-mobile-background-color);
+    border-radius: 4.2rem;
+    padding: 0.5em 0.7em;
+    margin: 1rem;
+    text-align: center;
+}
+.skills-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*CONTACT*/
+.contact-title{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+@media (max-width: 950px){
+
+/*MENU*/
+
+.menu{
+flex-direction: column;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+align-items: center;
+background-color: var(--menu-mobile-background-color);
+height: 100%;
+overflow-y: auto;
+opacity: 0;
+pointer-events: none;
+
+}
+
+.menu li{
+    padding: 0;
+}
+
+.menu a{
+    color: var(--text-color-inverse);
+    line-height: 6rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.open-menu,
+.close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+
+}
+
+.close-menu{
+    align-self: flex-end;
+    padding: 2rem 1.5rem;
+}
+
+.menu-opened{
+    opacity: 1;
+    pointer-events: all;
+    transition:opacity 1s;
+}
+
+.menu a::after{
+    content: none;
+}
+.menu a.selected,
+.menu a:hover{
+    opacity:1;
+    color: var(--navbar-shadow-color);
+    
+    
+}
+
+}
+
+@media (min-width: 950px){
+    .horizontal-padding{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .vertical-padding{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    
+
+/* //PROFILE// */
+.profile{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    align-items: center;
+}
+.profile-info{
+    margin-top: 1.5rem;
+    
+}
+.profile-img{
+width: 100%;
+max-width: 30rem;
+transform: scaleX(-1);
+}
+
+.profile-title{
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+}
+.profile-details{
+    font-size: 2rem;
+    margin: 0.2rem 0;
+}
+.profile-btn{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    border: none;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 0.4em 0.8em;
+    border-radius: 0.7rem;
+    
+}
+.profile-btn:hover{
+    filter: brightness(120%);
+}
+
+/* //SKILLS// */
+.skills-title{
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills-skill{
+    font-size: 2.5rem;
+    margin: 2rem;
+    
+}
+/* EXPERIENCES */
+.experiences{
+    display: flex;
+    flex-direction: column;
+}
+.wave{
+    width: 100%;
+    height: 1.5rem;
+    background-color: var(--menu-mobile-background-color);
+}
+
+.experience-title{
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+.experience-date{
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+}
+.experience-company{
+    font-size: 3rem;
+}
+.experience-position{
+    font-size: 2.8rem;
+    margin-top: 1.5rem;
+}
+.experience-description{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    
+}
+
+.experience-grid{
+    display: grid;
+    grid-template-columns: auto 0.02rem auto;
+    gap: 2rem 5rem;
+    max-width: 98rem;
+    margin:auto;
+
+}
+.line{
+    background-color: var(--text-color-inverse);
+    position: relative;
+}
+.line::after, 
+.line::before{
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--text-color-inverse);
+    border-radius: 50%;
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+}
+
+.line::after{
+    top: 100%;
+} 
+.last-line::after{
+    top:93.2%;
+    /* Debo encontrar la forma de que sea dinamico, quizas con un calc() pero cómo? */
+}
+.experience_left{
+    text-align: right;
+}
+
+/*CONTACT*/
+.contact-title{
+    font-size: 4.5rem;
+}
+
+}
