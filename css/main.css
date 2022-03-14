@@ -126,7 +126,7 @@ border-radius: 5%;
     display: inline;
 }
 .profile-img-line{
-    background-color: var(--secundary-color);
+    background-color: var(--menu-mobile-background-color);
     width: 100%;
     position: absolute;
     height: 1.5rem;
